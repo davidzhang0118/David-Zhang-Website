@@ -7,26 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Logo.png">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
     <script src="bootstrap.bundle.min.js"></script>
 
-    <div class="container-fluid" >
-        <nav class="navbar-expand navbar sticky-top bg-body-tertiar rounded-pill" style="background-color: #0a2d8f;">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-4" href="index.html" style="color: white;">About Me!</a>
-                <!-- <img src=" Logo.png" alt="Logo" width="50" height="35"> -->
-                    <div class="navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav fs-4">
-                            <a class="nav-link" style="color: white;" href="portfolio.html">Portfolio</a>
-                            <a class="nav-link" style="color: white;" href="experience.html">Experience</a>
-                            <a class="nav-link" style="color: white;" href="contact.html">Contact</a>
-                        </div>
-                    </div>
-            </div>
-        </nav>
-    </div>
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
 
     <div class = "container-fluid">
         <div class="PageHeader">
